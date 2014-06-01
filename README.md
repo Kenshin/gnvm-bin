@@ -1,11 +1,10 @@
 GNVM: Node.js version manager on Windows by GO
 ================================
-`GNVM` is simple multi node.js version manager on Windows by GO, like [nvm](https://github.com/creationix/nvm) [nvmw](https://github.com/hakobera/nvmw) [nodist](https://github.com/marcelklehr/nodist)
+`GNVM` is simple multi node.js version manager on Windows by GO, this is only `GNVM` binary repo.
 
 Documentation
 ---
-[中文版](https://github.com/kenshin/gnvm/blob/master/README_CN.md)
-[English](https://github.com/kenshin/gnvm/blob/master/README.md)
+[中文版](https://github.com/kenshin/gnvm/blob/master/README_CN.md) | [English](https://github.com/kenshin/gnvm/blob/master/README.md)
 
 CHANGELOG
 ---
