@@ -8,6 +8,10 @@ Documentation
 
 CHANGELOG
 ---
+* **2014-07-23, Version `0.1.3`:**
+    * Fixbug of `node.exe` process to take up, `gnvm use x.xx.xx` not work.
+    * When usage `gnvm use x.xx.xx`, kill `node.exe` process automatically.
+
 * **2014-07-15, Version `0.1.2`:**
     * Adapter go version 1.3.
     * Fix bug of usage `gnvm update latest -g` adapter go version error.
