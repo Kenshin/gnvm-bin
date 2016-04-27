@@ -1,47 +1,54 @@
-GNVM: Node.js version manager on Windows by GO
-================================
-`GNVM` is simple multi node.js version manager on Windows by GO, this is only `GNVM` binary repo.
+![logo](http://i.imgur.com/Z4iPSgQ.png) GNVM - Node.js 多版本管理器  
+================================  
+[![Version][version-badge]][version-link]
+#### `GNVM` 是一个简单的 `Windows` 下 Node.js 多版本管理器，类似的 `nvm` `nvmw` `nodist` 。  
+```
+c:\> gnvm install latest 1.0.0-x86 1.0.0-x64 5.0.0
+Start download Node.js versions [5.10.1, 1.0.0, 1.0.0-x86, 5.0.0].
+5.10.1: 18% [=========>__________________________________________] 4s
+ 1.0.0: 80% [==========================================>_________] 40s
+1.0...: 50% [==========================>_________________________] 30s
+ 5.0.1: 100% [==================================================>] 20s
+End download.
 
-Documentation
+c:\> gnvm ls
+5.1.1 -- latest
+1.0.0
+1.0.0 -- x86
+5.0.0 -- global
+
+c:\> gnvm use latest
+Set success, current Node.js version is 5.10.0.
+
+c:\> gnvm update latest
+Update success, current Node.js latest version is 5.10.0.
+```
+
+特色
 ---
-[中文版](https://github.com/kenshin/gnvm/blob/master/README_CN.md) | [English](https://github.com/kenshin/gnvm/blob/master/README.md)
+* 单文件，不依赖于任何环境。
+* 下载即用，无需配置。
+* 彩色日志输出。
+* 支持多线程下载。
+* 内置 [TAOBAO](http://npm.taobao.org/mirrors/node)，方便切换，也支持自定义。
+* 支持 `NPM` 下载/安装/配置。
 
-CHANGELOG
+主页
 ---
-* **2014-07-23, Version `0.1.3`:**
-    * Fixbug of `node.exe` process to take up, `gnvm use x.xx.xx` not work.
-    * When usage `gnvm use x.xx.xx`, kill `node.exe` process automatically.
+[![Website][www-badge]][www-link]
 
-* **2014-07-15, Version `0.1.2`:**
-    * Adapter go version 1.3.
-    * Fix bug of usage `gnvm update latest -g` adapter go version error.
-
-* **2014-06-06, Version `0.1.1`:**
-    * Change `util/p/print.go` to `github.com/Kenshin/cprint`.
-    * change `util/curl/curl.go` to `github.com/Kenshin/curl`.
-    * Add this project to travis-ci.org.
-    * Remove `nodehandle.cmd` method.
-    * Optimize `nodehandle.copy` method logic.
-    * Fix bug of When not global node.exe, need get gnvm.exe path.
-
-* **2014-05-30, Version `0.1.0`:**
-    * version
-    * install
-    * uninstall
-    * use
-    * update
-    * ls
-    * node-version
-    * config
-
-LICENSE
+文档
 ---
-(The MIT License)
+[English](https://github.com/kenshin/gnvm/blob/master/README.en.md) | [繁體中文](https://github.com/kenshin/gnvm/blob/master/README.tw.md)
 
-Copyright (c) 2014 Kenshin Wang <kenshin@ksria.com>
+许可
+---
+[![license-badge]][license-link]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<!-- Link -->
+[www-badge]:        https://img.shields.io/badge/website-gnvm.ksria.com-1DBA90.svg
+[www-link]:         http://ksria.com/gnvm
+[version-badge]:    https://img.shields.io/badge/lastest_version-0.2.0-blue.svg
+[version-link]:     https://github.com/kenshin/gnvm/releases
+[license-badge]:    https://img.shields.io/github/license/mashape/apistatus.svg
+[license-link]:     https://opensource.org/licenses/MIT
